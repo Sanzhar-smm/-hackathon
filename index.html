@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Physics Flashcards</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h1 class="title-shadow">PHYSICS LAWS</h1>
+
+  <div class="lang-switcher">
+    <button data-lang="en">EN</button>
+    <button data-lang="ru">RU</button>
+    <button data-lang="kz">KZ</button>
+  </div>
+
+  <div id="particles-js"></div>
+
+  <div class="card-wrapper">
+    <div id="card-placeholder" class="card-container"></div>
+    <div id="card-counter" class="card-counter"></div>
+
+    <div class="buttons">
+      <button id="backBtn">Back</button>
+      <button id="nextBtn">Next</button>
+    </div>
+
+    <div class="test-start">
+      <button id="startTestBtn">Start Physics Test</button>
+    </div>
+
+    <div id="test-section" class="hidden test-section">
+      <div id="test-card" class="card-container"></div>
+      <div id="test-options" class="options"></div>
+      <div id="test-progress" class="progress-bar"></div>
+      <div id="test-score" class="score"></div>
+    </div>
+  </div>
+
+  <audio id="backgroundMusic" autoplay loop>
+    <source src="music.mp3" type="audio/mpeg">
+    Ваш браузер не поддерживает аудио.
+  </audio>
+
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+</body>
+</html>
